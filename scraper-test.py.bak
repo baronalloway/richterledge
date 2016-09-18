@@ -1,0 +1,13 @@
+#import image_scraper
+#image_scraper.scrape_images('http://10.179.2.87/axis-cgi/jpg/image.cgi')
+#image-scraper -s mygifs http://10.179.2.87/axis-cgi/jpg/image.cgi --formats jpg
+import urllib2, time, os, re, getopt, sys
+auth_handler = urllib2.HTTPBasicAuthHandler()
+opener = urllib2.build_opener(auth_handler)
+urllib2.install_opener(opener)
+axis_jpg=urllib2.urlopen('http://10.179.2.87/axis-cgi/jpg/image.cgi' % ( axisip ) )
+
+filename='%s_%s_%s.jpg' % ( basename, time.strftime('%Y%m%d'), time.strftime('%H%M%S') )
+local_jpg=open(filename,'w')
+local_jpg.write(axis_jpg.read())
+local_jpg.close()
