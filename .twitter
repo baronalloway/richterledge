@@ -1,12 +1,11 @@
 [apikey]
-key = QgofVrUtFBim7hUovRfH37Sjx
-secret = bgL6guibmn28IvDX9rMwQtOQ8UZ3jKTswZuzaK3naPQ5IXWHKd
+key = <KEY GOES HERE>
+secret = <SECRET>
 
 [token]
-token = 777641507205578752-Zydhgqi52cpyXk2DiTj4crugztGSI0D
-secret = THRsBiTwDqUt415M9debsw63qQW8y6PAc9RggBqwptfHs
-
+token = <TOKEN>
+secret = <SECRET>
 [app]
-rule =  @richterledge
-account_screen_name = richterledge
-account_user_id = 777641507205578752
+rule =  <nickname>
+account_screen_name = <TWITTER USERNAME OF DEVELOPER>
+account_user_id = <USER ID OF TWITTER ACCOUNT>
